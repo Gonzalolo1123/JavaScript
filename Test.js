@@ -7,3 +7,4 @@ function mostrarMensaje() {
 
 // Llamamos a la función cuando la página se carga por completo
 window.onload = mostrarMensaje;
+// cambio
