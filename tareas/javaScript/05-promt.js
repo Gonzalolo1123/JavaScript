@@ -6,3 +6,4 @@ let question= confirm("¿Pasara el ramo?");
 
 alert(question);
 
+
