@@ -4,7 +4,7 @@
         let nota3 = prompt('Ingrese Nota 3: ',0);
         if(nota1>7 || nota2>7 || nota3>7|| nota1<1 || nota2<1 || nota3<1 || isNaN(nota1,nota2,nota3) )
         {
-            alert("Cuidado ingrese porfavor numeros entre 1 y 7");
+            alert("Cuidado ingrese porfavor numeros entre 1 y 7 o con . en vez de ,");
             window.location.reload();
         }
         else{
