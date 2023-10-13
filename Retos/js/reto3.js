@@ -1,19 +1,19 @@
 // Obtener los elementos por su ID
 var botonCalcular = document.getElementById("boton");
-var inputTotal = document.getElementById("total");
-var inputPorcentaje = document.getElementById("montos");
-var resultadoPropina = document.getElementById("montof");
-var resultadoTotalBoleta = document.getElementById("boleta");
+var inputTotalBoleta = document.getElementById("totalBoleta");
+var selectPorcentajePropina = document.getElementById("montos");
+var etiquetaPropina = document.getElementById("montof");
+var etiquetaTotalPagar = document.getElementById("boleta");
 
 botonCalcular.addEventListener("click", function() {
-    var costoTotal = parseFloat(inputTotal.value);
-    var porcentajePropina = parseFloat(inputPorcentaje.value);
+    var costoTotal = parseFloat(inputTotalBoleta.value);
+    var porcentajePropina = parseFloat(selectPorcentajePropina.value);
 
     if (!isNaN(costoTotal) && !isNaN(porcentajePropina)) {
         var propinaCalculada = costoTotal * (porcentajePropina / 100);
-        resultadoPropina.textContent = propinaCalculada.toFixed(0);
+        etiquetaPropina.textContent = propinaCalculada;
         var totalConPropina = costoTotal + propinaCalculada;
-        resultadoTotalBoleta.textContent = totalConPropina.toFixed(0);
+        etiquetaTotalPagar.textContent = totalConPropina;
     } else {
         alert("Ingrese números válidos");
     }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto 4</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      div {
+        text-align: center;
+        margin: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Calculadora de IMC</h1>
+      <!--Nombre-->
+      <label for="nombre">Nombre: </label>
+      <input type="text" id="nombrein" name="nombrein" />
+      <br /><br />
+      <!--Peso-->
+      <label for="peso">Peso: </label>
+      <input type="number" id="pesoin" />
+      <br /><br />
+      <!--Altura-->
+      <label for="altura">Altura: </label>
+      <input type="number" id="alturain" />
+      <br /><br />
+      <!--Edad-->
+      <label for="edad">Edad: </label>
+      <input type="text" id="edadin" />
+      <br /><br />
+      <!--Genero(Masculino,Femenino)-->
+      <label for="genero">Genero: </label>
+      <select id="generoin">
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+      </select>
+      <br /><br />
+      <!--Actividad Fisica-->
+      <label for="actfisica">Actividad Fisica: </label>
+      <select id="actfisicain">
+        <option value="1.2">Sedentario</option>
+        <option value="1.55">Moderado</option>
+        <option value="1.9">Activo</option>
+      </select>
+      <br /><br />
+      <!--Boton-->
+      <input id="boton" type="button" value="Calcular" />
+      <br /><br />
+      <!--Respuesta-->
+      <h1 id="title">Resultado para</h1>
+      <label for="IMC">IMC: </label>
+      <label id="IMCF"></label>
+      <br /><br />
+      <label for="CLA">Clasificacion: </label>
+      <label id="CLAF"></label>
+      <br /><br />
+      <label for="GED">Gasto Energetico Diario: </label>
+      <label id="GEDF"></label>
+      <br /><br />
+      <label for="EN">Estado Nutricional: </label>
+      <label id="ENF"></label>
+    </div>
+    <script src="../js/reto4.js"></script>
+  </body>
+</html>
