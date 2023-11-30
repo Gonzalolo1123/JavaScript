@@ -26,7 +26,7 @@ class MyWidget extends StatelessWidget {
       onPressed: () {
         print('¡Hola Mundo!');
       },
-      child: Text('Haz click para imprimir: ¡Hola Mundo!'),
+      child: Text('Haz click para imprimir: ¡Hola Mundo!-'),
     );
   }
 }
