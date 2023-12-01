@@ -15,20 +15,20 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.white,
         ),
         body: SingleChildScrollView(
-        child:Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              MyCardOsorno(),
-              MyCardPto(),
-              MyCardChiloe(),
-              SizedBox(height: 20),
-              MyWidget(),
-            ],
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MyCardOsorno(),
+                MyCardPto(),
+                MyCardChiloe(),
+                SizedBox(height: 20),
+                MyWidget(),
+              ],
+            ),
           ),
         ),
       ),
-    ),
     );
   }
 }
@@ -55,7 +55,7 @@ class MyCardOsorno extends StatelessWidget {
         children: [
           Image.asset(
             '../assets/sede_osorno.png',
-            ),
+          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
@@ -79,7 +79,7 @@ class MyCardPto extends StatelessWidget {
         children: [
           Image.asset(
             '../assets/sede_pto.png',
-            ),
+          ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
@@ -116,7 +116,6 @@ class MyCardChiloe extends StatelessWidget {
     );
   }
 }
-
 
 void _launchURL(String url) async {
   if (await canLaunch(url)) {
